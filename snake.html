@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game - Perfect Reset</title>
+    <link href="snake.css" rel="stylesheet">
+</head>
+<body>
+
+    <h1>Snake Game</h1>
+
+    <div class="canvas-area">
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <div id="overlay">
+            <button class="action-btn" id="startBtn" onclick="handleButtonClick()">START GAME</button>
+        </div>
+    </div>
+    
+    <div class="info">
+        <span>Score: <b id="score">0</b></span>
+        <label>Speed: 
+            <select id="speedSelect">
+                <option value="200">Slow</option>
+                <option value="120" selected>Normal</option>
+                <option value="70">Fast</option>
+                <option value="40">Insane</option>
+            </select>
+        </label>
+    </div>
+
+    <div class="controls">
+        <div class="btn up" onclick="changeDirection('UP')">▲</div>
+        <div class="btn left" onclick="changeDirection('LEFT')">◀</div>
+        <div class="btn down" onclick="changeDirection('DOWN')">▼</div>
+        <div class="btn right" onclick="changeDirection('RIGHT')">▶</div>
+    </div>
+
+    <script src="snake.js"> </script>
+</body>
+</html>

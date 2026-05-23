@@ -31,3 +31,5 @@ Vanilla JavaScript: Clean, modern JS logic without the need for external librari
 
 📂 Installation
 No installation is required. Simply download the snake.html file and open it in any modern web browser.
+
+Play with code.
